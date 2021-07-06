@@ -55,7 +55,10 @@ img{
 
 
       
+.page-header{
 
+      border-bottom: 1px solid #ECECEC;
+}
 .container-header{
       display: flex;
       align-items:center;
@@ -73,6 +76,7 @@ img{
 .nav-list{
   display: flex;
   align-items: center;
+  
 
 
 }
@@ -168,8 +172,11 @@ img{
       justify-content: center;
       align-items: center;
 }
-.email-icon,.tel-icon{
+.contacts-heder-icon{
       margin-right: 10px;
+}
+.email-icon,.tel-icon{
+      
       fill: #757575;
 }
 
