@@ -23,7 +23,7 @@
 
                 <!--menu-->
                 <ul class="list menu">
-                    <li class="item-menu"><a href="./index.html" class="current menu">Студия</a></li>
+                    <li class="item-menu"><a href="./index.html" class="current menu link-underline-studio">Студия</a></li>
                     <li class="item-menu"><a href="portfolio.html" class="menu">Портфолио</a></li>
                     <li class="item-menu"><a href="#" class="menu ">Контакты</a></li>
                 </ul>
@@ -69,7 +69,7 @@
 
                     <div class="container container-hiro">
                             <h1 class="hiro">Эффективные решения для вашего бизнеса</h1>
-                            <button type="button" class="order-service">Заказать услугу</button>
+                            <button type="button" class="order-service" data-modal-open>Заказать услугу</button>
 
                     </div>
                     
@@ -135,9 +135,30 @@
                 <div class="container">
                         <h2 class="title works-title">Чем мы занимаемся</h2>
                         <ul class="list works-list">
-                            <li class="works-list-box"><img src="./images/box_one.jpg" alt="Стол, планшет, лист" width="370" height="294"></li>
-                            <li class="works-list-box"><img src="./images/box_two.jpg" alt="Планшет , клавтиатура, мышка" width="370" height="294"></li>
-                            <li class="works-list-box"><img src="./images/box_three.jpg" alt="Телефон , ноутбук, женщина" width="370" height="294"></li>
+                            <li class="works-list-box thumb">
+                                <img src="./images/box_one.jpg" alt="Стол, планшет, лист" width="370" height="294">
+                                <div class="background-label">
+                                    <p class="ladel">
+                                        Десктопные приложения
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="works-list-box thumb">
+                                <img src="./images/box_two.jpg" alt="Планшет , клавтиатура, мышка" width="370" height="294">
+                                <div class="background-label">
+                                    <p class="ladel">
+                                        Мобильные приложения 
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="works-list-box thumb">
+                                <img src="./images/box_three.jpg" alt="Телефон , ноутбук, женщина" width="370" height="294">
+                                <div class="background-label">
+                                    <p class="ladel">
+                                        Дизайнерские решения
+                                    </p>
+                                </div>
+                            </li>
                         </ul>
 
                 </div>
@@ -496,6 +517,20 @@
 
 
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="close" data-modal-close>
+                    <svg class="" width="11" height="11">
+                        <use href="./images/sprite.svg#close">
+                    
+                        </use>
+                    </svg>
 
+                </button>
+
+
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
 </body>
 </html>
